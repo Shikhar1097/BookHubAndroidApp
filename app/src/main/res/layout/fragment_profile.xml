@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ProfileFragment">
+
+    <RelativeLayout
+        android:id="@+id/profileHeader"
+        android:layout_width="match_parent"
+        android:layout_height="195dp"
+        android:background="@drawable/cover_pic"
+        android:padding="20dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:src="@drawable/profile_pic" />
+
+        <TextView
+            android:id="@+id/txtusername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/username"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/profileBody"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/profileHeader"
+        android:background="#000000">
+
+        <ImageView
+            android:id="@+id/imgmailicon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/ic_mail_icon" />
+
+        <TextView
+            android:id="@+id/txtemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="52dp"
+            android:layout_toRightOf="@+id/imgmailicon"
+            android:text="@string/email"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/imgphoneicon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/imgmailicon"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/ic_phone_icon" />
+
+        <TextView
+            android:id="@+id/txtphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtemail"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="57dp"
+            android:layout_toRightOf="@+id/imgphoneicon"
+            android:text="@string/phone"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+</RelativeLayout>
